@@ -1,0 +1,40 @@
+body {
+   background-color: rgb(2, 34, 34);
+}
+body .container:first-child.morpheus-den {
+   background-image: url("../morpheus-den.png");
+   height: 100vh;
+}
+body .container:first-child.palo-alto {
+   background-image: url("../palo-alto.png");
+   height: 100vh;
+}
+body.midnight-bloom {
+	background-image: url("../midnight-bloom.png");
+}
+body.millennium-pine {
+	background-image: url("../millennium-pine.png");
+}
+body.morning-salad {
+	background-image: url("../morning-salad.png");
+}
+
+
+header {
+   font-size: 2.4rem;
+   font-family: "Bakbak One", cursive;
+}
+header.morpheus-den {
+   color: navy;
+}
+footer.morpheus-den {
+   color: azure;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+}
