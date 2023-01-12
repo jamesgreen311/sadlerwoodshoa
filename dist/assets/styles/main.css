@@ -1,12 +1,14 @@
 body {
-   background-color: rgb(2, 34, 34);
+	background-color: rgb(2, 34, 34);
 }
 body .container:first-child.morpheus-den {
-   background-image: url("../morpheus-den.png");
-   height: 100vh;
+	background-image: url("../morpheus-den.png");
+   background-position: -300px bottom;
+	height: 100vh;
 }
 body .container:first-child.palo-alto {
-   background-image: url("../palo-alto.png");
+	background-image: url("../palo-alto.png");
+   background-position: -300px bottom;
    height: 100vh;
 }
 body.midnight-bloom {
@@ -19,16 +21,15 @@ body.morning-salad {
 	background-image: url("../morning-salad.png");
 }
 
-
 header {
-   font-size: 2.4rem;
-   font-family: "Bakbak One", cursive;
+	font-size: 2.4rem;
+	font-family: "Bakbak One", cursive;
 }
 header.morpheus-den {
-   color: navy;
+	color: navy;
 }
 footer.morpheus-den {
-   color: azure;
+	color: azure;
 }
 .container {
 	display: flex;
