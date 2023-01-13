@@ -1,39 +1,6 @@
 body {
 	background-color: rgb(2, 34, 34);
 }
-body .container:first-child.morpheus-den {
-	background-image: url("../morpheus-den.png");
-   background-position: -300px bottom;
-	height: 100vh;
-}
-body .container:first-child.palo-alto {
-   background-image: linear-gradient(to bottom, #f8df9e 5%, #16a085 80% );
-   height: 100vh;
-}
-body.midnight-bloom {
-	background-image: url("../midnight-bloom.png");
-}
-body.millennium-pine {
-	background-image: url("../millennium-pine.png");
-}
-body.morning-salad {
-	background-image: url("../morning-salad.png");
-}
-
-header {
-	font-size: 2.4rem;
-	font-family: "Bakbak One", cursive;
-   text-align: center;
-}
-header.morpheus-den {
-	color: navy;
-}
-.palo-alto > header {
-   color: rgb(2, 34, 34);
-}
-footer.morpheus-den {
-	color: azure;
-}
 .container {
 	display: flex;
 	flex-direction: column;
@@ -41,4 +8,25 @@ footer.morpheus-den {
 	justify-content: center;
 	width: 100%;
 	margin: auto;
+}
+
+body .container:first-child.palo-alto {
+   background-image: linear-gradient(to bottom, #f8df9e 5%, #16a085 80% );
+   height: 100vh;
+}
+
+header {
+	font-size: 2.4rem;
+	font-family: "Bakbak One", cursive;
+   text-align: center;
+}
+
+.palo-alto > header {
+   color: rgb(2, 34, 34);
+
+}
+
+.palo-alto.container {
+   border-left: 10px solid rgb(255, 166, 0);
+   border-right: 10px solid rgb(255, 166, 0);
 }
