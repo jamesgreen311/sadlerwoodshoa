@@ -1,16 +1,30 @@
 body {
 	background-color: rgb(2, 34, 34);
 }
+nav {
+   align-items: center;
+}
+a.nav-link {
+   color:rgb(2, 34, 34);
+   font-family: "Bakbak One", cursive;
+   font-size: 1.2rem;
+}
+a.nav-link:focus,
+a.nav-link:hover {
+   color:rgb(255, 166, 0);
+   background-color: rgb(2, 34, 34);
+   border-radius: 4px;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 	width: 100%;
 	margin: auto;
 }
 
-body .container:first-child.palo-alto {
+.container:first-child.palo-alto {
    background-image: linear-gradient(to bottom, #f8df9e 5%, #16a085 80% );
    height: 100vh;
 }
@@ -26,7 +40,16 @@ header {
 
 }
 
-.palo-alto.container {
+.container.palo-alto {
    border-left: 10px solid rgb(255, 166, 0);
    border-right: 10px solid rgb(255, 166, 0);
+}
+
+.palo-alto .card {
+   background-color: #f8df9e;
+}
+
+.palo-alto .card p span.highlight {
+   color:rgb(22,160,133);
+   font-weight: bold;
 }
