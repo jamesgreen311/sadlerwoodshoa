@@ -15,6 +15,14 @@ a.nav-link:hover {
    background-color: rgb(2, 34, 34);
    border-radius: 4px;
 }
+.banner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.banner img {
+   width: 25%;
+}
 .documents {
    display: flex;
    justify-content: center;
