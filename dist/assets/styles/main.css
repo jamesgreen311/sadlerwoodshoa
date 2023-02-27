@@ -1,43 +1,78 @@
 body {
-	background-color: rgb(2, 34, 34);
+   background-color: rgb(2, 34, 34);
 }
 nav {
    align-items: center;
 }
 a.nav-link {
-   color:rgb(2, 34, 34);
+   color: rgb(2, 34, 34);
    font-family: "Bakbak One", cursive;
    font-size: 1.2rem;
 }
 a.nav-link:focus,
 a.nav-link:hover {
-   color:rgb(255, 166, 0);
+   color: rgb(255, 166, 0);
    background-color: rgb(2, 34, 34);
    border-radius: 4px;
 }
-
+.documents {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-block-start: 1em;
+}
+.doc-list {
+   font-size: var(--size-4);
+   list-style: none;
+   counter-reset: docs-counter;
+}
+.doc-list li {
+   margin-block: 1em;
+}
+.minutes {
+   position: relative;
+}
+.minutes::before {
+   counter-increment: docs-counter;
+   content: counter(docs-counter) " ";
+   color: rgb(2, 34, 34);
+   position: absolute;
+   left: -2.5em;
+   background-color: rgb(255, 166, 0);
+   width: 2em;
+   height: 2em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   top: -.5em;
+   font-weight: 800;
+}
+a.minutes {
+   text-decoration: none;
+}
 .container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   margin: auto;
 }
 
 .container:first-child.palo-alto {
-   background-image: linear-gradient(to bottom, #f8df9e 5%, #16a085 80% );
+   background-image: linear-gradient(to bottom, #f8df9e 5%, #16a085 80%);
    height: 100vh;
 }
 
 header {
-	font-size: 2.4rem;
-	font-family: "Bakbak One", cursive;
+   font-size: 2.4rem;
+   font-family: "Bakbak One", cursive;
    text-align: center;
 }
 
 .palo-alto > header {
    color: rgb(2, 34, 34);
-
 }
 
 .container.palo-alto {
@@ -50,7 +85,7 @@ header {
 }
 
 .palo-alto .card p span.highlight {
-   color:rgb(22,160,133);
+   color: rgb(22, 160, 133);
    font-weight: bold;
 }
 
